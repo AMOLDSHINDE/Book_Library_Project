@@ -137,6 +137,9 @@ from relationship.models import *
 # diesel = FuelType.objects.get(name = "Diesel")
 # c180.fueltype.add(diesel)
 
-
+print("""relation ship type
+one to one
+one to many
+and many to many""")
 
 # exec(open(r"D:\code_files\DjangoProjects\b9_library\relationship\db_shell.py").read())
