@@ -3,16 +3,16 @@ from django import forms
 from .models import Book
 
 
-class GeeksForm(forms.Form):
-    title = forms.CharField()
-    description = forms.CharField() 
-    date_time = forms.DateField()
-    is_active = forms.BooleanField()
-    price = forms.IntegerField()
-    first_name = forms.CharField(max_length = 200) 
-    last_name = forms.CharField(max_length = 200) 
-    roll_number = forms.IntegerField(help_text = "Enter 6 digit roll number") 
-    password = forms.CharField(widget = forms.PasswordInput()) 
+# class GeeksForm(forms.Form):
+#     title = forms.CharField()
+#     description = forms.CharField() 
+#     date_time = forms.DateField()
+#     is_active = forms.BooleanField()
+#     price = forms.IntegerField()
+#     first_name = forms.CharField(max_length = 200) 
+#     last_name = forms.CharField(max_length = 200) 
+#     roll_number = forms.IntegerField(help_text = "Enter 6 digit roll number") 
+#     password = forms.CharField(widget = forms.PasswordInput()) 
 
 
 class BookForm(forms.ModelForm):
@@ -37,3 +37,7 @@ class AddressForm(forms.Form):
     state = forms.ChoiceField(choices=STATES)
     zip_code = forms.CharField(label='Zip')
     check_me_out = forms.BooleanField(required=False)
+
+
+def abcdd():
+    pass
